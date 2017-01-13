@@ -37,12 +37,11 @@ define postfix::ldap_map (
   $tls_ca_cert_file = undef,
   $query_filter = '(mail=%s)',
   $result_attribute = 'uid',
+  $result_format = undef,
   $bind = false,
   $bind_dn = undef,
   $bind_pw = undef,
 ){
-
-  include postfix::ldap
 
   $valid_scope_names = ['sub', 'base', 'one']
 

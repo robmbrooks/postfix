@@ -21,6 +21,9 @@ search_base = <%= @search_base %>
 scope = <%= @scope %>
 query_filter = <%= @query_filter %>
 result_attribute = <%= @result_attribute %>
+<% if @result_format -%>
+result_format = <%= @result_format %>
+<% end -%>
 
 <% if @bind -%> 
 bind = yes
